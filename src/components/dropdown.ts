@@ -116,14 +116,21 @@ export class Dropdown extends LitElement {
   };
 
   renderItems() {
-    return listItems.map(item => html`<li class='item ${this.isItemActive(item) ? 'active' : null}'>${item}</li>`);
+    return listItems.map(item => html`<li class="item ${this.isItemActive(item) ? 'active' : null}">${item}</li>`);
   };
   
   render() {
     return html`
-      <div class='dropdownWrapper ${this.renderSide}'>
-        <button class='dropdownButton' @click=${this.handleDropdownClick} part='button'>Select fruit</button>
-        <ul class='dropdownList ${this.isVisible ? 'visible' : null}' @click=${this.handleItemClick}>
+      <div class="dropdownWrapper ${this.renderSide}">
+        <button 
+          class="dropdownButton" 
+          @click=${this.handleDropdownClick} 
+          type="button"
+          aria-expanded="${this.isVisible}"
+        >
+          Select fruit
+        </button>
+        <ul class="dropdownList ${this.isVisible ? 'visible' : null}" @click=${this.handleItemClick}>
           ${this.renderItems()}
         </ul>
       </div>
