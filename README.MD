@@ -6,7 +6,7 @@ Inside you will find a dropdown component built with Lit and Vite.
 ```bash
 npm i
 ```
-###Run dev server:
+### Run dev server:
 ```bash
 npm run dev
 ```
