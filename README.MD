@@ -10,7 +10,7 @@ npm run dev
 ```
 
 
-Open [http://localhost:5173](http://localhost:5173)with your browser of choice.
+Open [http://localhost:5173](http://localhost:5173) with your browser of choice.
 
 ### Component Location: `src/components/dropdown.ts`
 
